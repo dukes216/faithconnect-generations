@@ -167,6 +167,13 @@ const Auth = () => {
             </Card>
           </TabsContent>
         </Tabs>
+
+        <div className="mt-6 text-center">
+          <p className="text-sm text-muted-foreground mb-2">Are you a church administrator?</p>
+          <Button variant="link" onClick={() => navigate("/admin-setup")}>
+            Register Your Church
+          </Button>
+        </div>
       </div>
     </div>
   );
