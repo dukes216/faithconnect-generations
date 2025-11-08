@@ -81,7 +81,8 @@ const Auth = () => {
             <Users className="w-8 h-8 text-primary-foreground" />
           </div>
           <h1 className="text-3xl font-bold text-foreground mb-2">FaithTech Generations</h1>
-          <p className="text-muted-foreground">Connecting mentors and mentees in faith</p>
+          <p className="text-muted-foreground mb-1">Church Administrator Portal</p>
+          <p className="text-sm text-muted-foreground">Sign in to manage your church community</p>
         </div>
 
         <Tabs defaultValue="signin" className="w-full">

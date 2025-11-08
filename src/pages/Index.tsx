@@ -81,12 +81,19 @@ const Index = () => {
             </div>
             <span className="text-xl font-bold">FaithTech Generations</span>
           </div>
-          {user && (
-            <Button variant="ghost" size="sm" onClick={handleSignOut}>
-              <LogOut className="w-4 h-4 mr-2" />
-              Sign Out
-            </Button>
-          )}
+          <div className="flex items-center gap-2">
+            {!user && (
+              <Button variant="outline" size="sm" onClick={() => navigate("/auth")}>
+                Church Admin Login
+              </Button>
+            )}
+            {user && (
+              <Button variant="ghost" size="sm" onClick={handleSignOut}>
+                <LogOut className="w-4 h-4 mr-2" />
+                Sign Out
+              </Button>
+            )}
+          </div>
         </div>
       </header>
 
